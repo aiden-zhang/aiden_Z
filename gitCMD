@@ -24,3 +24,8 @@ git push
     $:git pull
     
 
+#令牌申请后
+本地仓库进入.git/config
+将urlhttps://github.com/xxx之间加上oauth2:xxx@ 变成https://oauth2:xxx@github.com/xxx就行了。
+对于第一次本地git clone，从web上copy repo  url后可按照同样的方式拼接 如
+git clone https://oauth2:your access token@github.com/xxx
