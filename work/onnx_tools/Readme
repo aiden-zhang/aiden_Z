@@ -1,0 +1,6 @@
+1. onnx_infer_shape.py 可以推理出网络中的shape信息
+2. prune_onnx_model.py 模型剪枝
+3. 高版本onnxruntime自带可以fix shape的工具，使用方法：
+    python -m onnxruntime.tools.make_dynamic_shape_fixed --dim_param dynamic_batch --dim_value 1 model.onnx model.fixed.onnx
+4.ir_version_change.py可强制修改onnx ir版本 
+5. run_by_onnxruntime.py 展示用onnxruntime 运行onnx模型的方法
